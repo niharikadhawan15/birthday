@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Happy Birthday Keshav</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link href="main.css" rel="stylesheet">
+  </head>
+  <body> 
+    <div class="container-fluid" id="wrapper"> 
+     <header><nav class="navbar navbar-default" id="header"><!--A navigation bar is a navigation header that is placed at the top of the page-->
+      <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+            <a class="navbar-brand" href="#" ><!-- Added a logo instead of the brand name -->
+                 <img class="img-responsive" src="img/d.jpg" alt="logo"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+            <form class="navbar-form navbar-left">
+                <div class="inner-addon right-addon"><!-- search box input box and button are connected to each other (i.e. no space between them). -->
+                   <i class="glyphicon glyphicon-search"></i>
+                   <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+
+            <ul class="nav navbar-nav navbar-right">
+            
+             <span class="profile-avatar navbar-left">
+                <img class="img-responsive" src="img/1.png" alt="profile picture"></span>
+                <!-- added a line in your header in the same places as Facebook using class border -->
+               <li><a class="white-text border" href="#" id="white-text">Keshav</a></li>
+                <li><a class="white-text border " href="#" id="white-text">Home</a></li>
+                     
+                <!-- Used position property in badge-notify class to show new notifications, messages and friend requests pending to be viewed -->
+                <li><a class="white-text" href="#" id="white-text"><span class="glyphicon glyphicon-user" aria-hidden="true"><span class="badge badge-notify">1</span></span></a></li>
+                <li><a class="white-text" href="#" id="white-text"><span class="glyphicon glyphicon-envelope"   aria-hidden="true"><span class="badge badge-notify"></span></span></a></li>
+                <li><a class="white-text border" href="#" id="white-text"><span class="glyphicon glyphicon-globe" aria-hidden="true"><span class="badge badge-notify"></span></span></a></li>
+                <li><a class="white-text" href="#" id="white-text"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a></li> 
+                <li class="dropdown">
+          <a href="#" class="dropdown-toggle white-text" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <!-- dropdown list item names added -->
+            <li><a href="#" style="color:black"><B>HAPPY BIRTHDAY !! </B></a></li>
+            
+          </ul>
+        </li>
+             </ul>
+         </div><!-- /.navbar-collapse -->
+       </div><!-- /.container-fluid -->
+    </nav>
+</header> Used Bootstrap's Grid System to add a basic layout of 2+7+3-->
+<div class ="section">     
+<div class="row">          
+
+
+    <!-- Added a div tag inside each column and given it a unique ID to change the color of the columns to facebook's background color -->
+    <div class="hidden-xs col-sm-4 col-md-3"><div id="menu"> 	
+        <ul class="nav nav-pills nav-stacked">
+          <li role="presentation" style="margin-top: 5px"><a href="#" style="color:black"><span class=" navbar-left">
+         <!--  Added the  image in the header menu -->
+                <img class="img-responsive" src="img/1.png" alt="profile picture" height="20" width="20"></span><b>  Keshav</b></a></li>
+                <!-- Added relevant icons  and Used  the Bootstrap 'badges' component to add Numbers on the right side just like Facebook-->
+          <li role="presentation"><a href="#" style="color:black"><span ><img src="https://cdn.worldvectorlogo.com/logos/facebook-love.svg" style="width:25px;height:25px"></span>  Blessings</a></li>
+          <li role="presentation"><a href="#" style="color:black"><span ><img src="https://cdn.worldvectorlogo.com/logos/facebook-love.svg" style="width:25px;height:25px"></span> Mesmorizing Childhood Memories</a></li>
+          <li role="presentation"><a href="#" style="color:black"><span ><img src="https://cdn.worldvectorlogo.com/logos/facebook-love.svg" style="width:25px;height:25px"></span> Wishes</a></li>
+          <li role="presentation"><a href="#" style="color:black"><span ><img src="https://cdn.worldvectorlogo.com/logos/facebook-love.svg" style="width:25px;height:25px"></span>  Memories to Cherish  </a></li>
+          <li role="presentation"><a href="#" style="color:black"><span ><img src="https://cdn.worldvectorlogo.com/logos/facebook-love.svg" style="width:25px;height:25px"></span>  Our World</a></li>
+        </ul>
+        
+       
+    </div>
+</div>
+   
+
+<div class="col-xs-12 col-sm-8 col-md-6 ">
+    <div id="main">
+       <!-- Created a common container for our posts using 'panels' component -->
+       <!-- Added like, comment and share buttons -->
+       <!-- Added each user's image in the post container -->
+        <div class="panel panel-default">
+            <div class="panel-heading" >
+                <h3 class="panel-title navbar-nav"><a href="#" style="color: black">  <span class="glyphicon glyphicon-pencil"></span>Create a post / </a>
+                </h3>
+                <h3 class="panel-title navbar-nav"><a href="#" style="color: black"><a href="#"><span class="glyphicon glyphicon-camera"></span> Photo Album / </a>
+                </h3>
+                <h3 class="panel-title active"><a href="#" style="color: black"><span class="glyphicon glyphicon-facetime-video"></span> Live Video</a>
+                </h3>
+            </div>    <!-- panel heading -->
+            <div class="panel-body">
+                <div> <span><img src="img/1.png" height="40" width="40"></span>  <span style="color: grey">Hi,Keshav. Tell your friends about your day!!</div>
+            </div> <!-- panel body -->
+            <div class="panel-footer">
+                <button style="border-radius: 90px; background-color: white;border: black"><span class="glyphicon glyphicon-picture"></span>Photo/Video</button>
+                <button style="border-radius: 90px; background-color: white; border:white"><span class="glyphicon glyphicon-paperclip"></span>Feeling/Activity</button>
+                <button style="border-radius: 90px; background-color: white ;border:white"><span class="glyphicon glyphicon-option-horizontal"></span></button>
+            </div>    <!-- panel footer -->
+        </div>    <!-- panel default -->
+        
+
+<!-- Created an image post -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><span><img src="img/10.jpg" height="40" width="40"></span>  <span style="display: inline-table;""><a href="#"><b>Dhawan family</b></a><a href="#"><b> </b></a> posted a <span> <a href="#" >photo</a><br><abbr><!-- Added the time when the post was created -->  <span class="timestampContent">9 hrs</span></abbr></span></h3>
+            </div>
+            <div class="panel-body">
+                <div>
+                     <img src="img/hb.jpg" class="img-responsive" alt="Responsive image" height="60%" width="80%">
+                </div>
+                     <span><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>Like</span>
+                     <span><span class="glyphicon glyphicon-comment" aria-hidden="true"></span>Comment</span>
+                     <span><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>Share</span>
+                
+            </div>
+            <div class="panel-footer"><input style="width: 100%;margin-top: 15px;" placeholder="Write a comment...">
+            </div>
+        </div>
+        
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><span><img src="img/11.jpg" height="40" width="40"></span>
+                <span style="display: inline-table;""><a href="#"><b> Niharika</b></a> shared a <span> <a href="#" >slider</a><br><abbr>  <!-- Added the time when the post was created --><span class="timestampContent">20 hrs</span></abbr></span></h3>
+            </div>
+            <div class="panel-body "><div>Mesmorizing Childhood Memories!!</div>
+                <div class="acontainer">
+                    <div id="carousel">
+                        <figure><img src="img/e.jpg" alt="" class="img-responsive"></figure>
+                        <figure><img src="img/f.jpg" alt="" class="img-responsive"></figure>
+                        <figure><img src="img/g.jpg" alt="" class="img-responsive" ></figure>
+                        <figure><img src="img/h.jpg" alt="" class="img-responsive" ></figure>
+                        <figure><img src="img/j.jpg" alt="" class="img-responsive"></figure>
+                        <figure><img src="img/k.jpg" alt="" class="img-responsive"></figure>
+                        <figure><img src="img/l.jpg" alt="" class="img-responsive"></figure>
+                        <figure><img src="img/m.jpg" alt="" class="img-responsive"></figure>
+                        <figure><img src="img/n.jpg" alt="" class="img-responsive"></figure>
+            
+                    </div>
+                </div>
+                <div><a href="#"></a></div>
+                    
+                        <div> 
+                            <span><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>Like</span>
+                            <span><span class="glyphicon glyphicon-comment" aria-hidden="true"></span>Comment</span>
+                            <span><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>Share</span>
+                        </div>
+                    </div>
+                    <div class="panel-footer"><div class="media">
+                        
+                        
+                    </div><input style="width: 100%;margin-top: 15px;" placeholder="Write a comment...">
+                </div>
+            </div>
+
+
+        <!-- Created a text post -->
+        <!-- Created a common container for our posts using 'panels' component -->
+       <!-- Added like, comment and share buttons -->
+       <!-- Added each user's image in the post container -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><span><img src="img/10.jpg" height="40" width="40"></span>  <span style="display: inline-table;""><a href="#"><b> Dhawan Family</b></a><br><abbr> <!-- Added the time when the post was created --> <span class="timestampContent"> 4 hrs</span></abbr></span></h3>
+            </div>
+            <div class="panel-body">
+                <div> <h3>Wishing you a Wonderful Birthday.... May all your dreams come true today and always !! <img src="https://cdn.worldvectorlogo.com/logos/facebook-love.svg" style="width:25px;height:25px"></h3></div>
+                <div>
+                     <span><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>Like</span>
+                     <span><span class="glyphicon glyphicon-comment" aria-hidden="true"></span>Comment</span>
+                     <span><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>Share</span>
+                </div>
+            </div>
+            <div class="panel-footer"><div class="media">
+                 <div class="media-left">
+                    <a href="#">
+                        
+                    </a>
+                </div>
+                
+            </div><input style="width: 100%;margin-top: 15px;" placeholder="Write a comment...">
+        </div>
+        </div>    
+
+
+
+             
+
+
+             <!-- Created a quote post -->  
+             <!-- Created a common container for our posts using 'panels' component -->
+            <!-- Added like, comment and share buttons -->
+            <!-- Added each user's image in the post container -->
+        <div class="panel panel-default">
+            
+            
+            <!-- added nested comments -->
+             <div class="panel-footer">
+               
+</div>    
+
+         
+         <!-- Created an album post -->
+         <!-- Created a common container for our posts using 'panels' component -->
+         <!-- Added like, comment and share buttons -->
+         <!-- Added each user's image in the post container -->   
+        <div class="panel panel-default ">
+            <div class="panel-heading">
+                <h3 class="panel-title"><span><img src="img/10.jpg" height="40" width="40"></span>  <span style="display: inline-table;""><a href="#"><b>Dhawan Family</b></a> added <a href="#" style="color: blue">9 new photos </a>to album<a href="#" style="color: blue"> Memories to Cherish<br><abbr> <!-- Added the time when the post was created --> <span class="timestampContent">20 hrs</span></abbr></span></h3>
+            </div>
+            <div class="panel-body">
+                 <div class="carousel">
+                    <div class="gallery">
+                        <div class="thumbnail-1">
+                            <img src="img/o.jpg" height="200" width="500" alt="" />
+                            
+                        </div>
+                        <div class="large-1">
+                             <img src="img/o.jpg" alt="" />
+                            <span class="close">✕</span>
+                        </div>
+                        <div class="thumbnail-2">
+                            <img src="img/w.jpg" height="200" width="500" alt="" />
+                           
+                        </div>
+                        <div class="large-2">
+                            <img src="img/w.jpg" alt="" />
+                            <span class="close">✕</span>
+                        </div>
+                        <div class="thumbnail-3">
+                            <img src="img/p.jpg" height="200" width="500" alt="" />
+                            
+                        </div>
+                        <div class="large-3 ">
+                            <img src="img/p.jpg" alt="" />
+                            <span class="close">✕</span>
+                        </div>
+                        <div class="thumbnail-4">
+                            <img src="img/q.jpg" height="200" width="500" alt="" />
+                             
+                        </div>
+                        <div class="large-4">
+                            <img src="img/q.jpg" alt="" />
+                            <span class="close">✕</span>
+                        </div>  
+                        <div class="thumbnail-5">
+                            <img src="img/r.jpg" height="200" width="500" alt="" />
+                             
+                        </div>
+                        <div class="large-5">
+                            <img src="img/r.jpg" alt="" />
+                            <span class="close">✕</span>
+                        </div> 
+                        <div class="thumbnail-6">
+                            <img src="img/s.jpg" height="200" width="500" alt="" />
+                            
+                        </div>
+                        <div class="large-6">
+                            <img src="img/s.jpg" alt="" />
+                            <span class="close">✕</span>
+                        </div> 
+                        <div class="thumbnail-7">
+                            <img src="img/t.jpg" height="200" width="500" alt="" />
+                             
+                        </div>
+                        <div class="large-7">
+                            <img src="img/t.jpg" alt="" />
+                            <span class="close">✕</span>
+                        </div> 
+                        <div class="thumbnail-8">
+                             <img src="img/u.jpg" height="200" width="500" alt="" />
+                             
+                        </div>
+                        <div class="large-8">
+                            <img src="img/u.jpg" alt="" />
+                            <span class="close">✕</span>
+                        </div> 
+                        <div class="thumbnail-9">
+                            <img src="img/v.jpg" height="200" width="500" alt="" />
+                             
+                        </div>
+                        <div class="large-9">
+                            <img src="img/v.jpg" alt="" />
+                            <span class="close">✕</span>
+                         </div>   
+                    </div>
+                </div>
+                <div> 
+                     <span><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>Like</span>
+                     <span><span class="glyphicon glyphicon-comment" aria-hidden="true"></span>Comment</span>
+                     <span><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>Share</span>
+                </div>
+            </div>
+            <div class="panel-footer"><div class="media">
+                 
+                
+            </div><input style="width: 100%;margin-top: 15px;" placeholder="Write a comment...">
+        </div>
+        </div>    
+
+
+         <!-- Created an image post -->
+        <div class="panel panel-default">
+            
+            
+            
+        </div>
+        </div>
+
+
+
+        
+
+       <!-- Created a different kind of  post -->
+       <!-- Created a common container for our posts using 'panels' component -->
+       <!-- Added like, comment and share buttons -->
+       <!-- Added each user's image in the post container -->
+        <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span> <img src="img/11.jpg" height="40" width="40"></span>  <span style="display: inline-table;""><a href="#"><b>Niharika</b></a><a href="#"><b> </b></a> shared a <span> <a href="#" >post</a><br><abbr>  <span class="timestampContent">6 hrs</span></abbr></span></h3>
+                </div>
+                <div class="panel-body"><div>OUR WORLD... <img src="https://cdn.worldvectorlogo.com/logos/facebook-love.svg" style="width:25px;height:25px"><br></div>
+                    <div class="container">
+    <div id="main_area">
+        <!-- Slider -->
+        <div class="row" >
+            
+            <div class="col-sm-7">
+                <div class="col-xs-12" id="slider">
+                    <!-- Top part of the slider -->
+                    <div class="row">
+                        <div class="col-sm-12" id="carousel-bounding-box">
+                            <div class="carousel slide" id="myCarousel">
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="active item" data-slide-number="5">
+                                        <img src="img/14.jpg" width="100%"></div>
+
+                                    <div class="item" data-slide-number="1">
+                                        <img src="img/16.jpg"  width="100%"></div>
+
+                                    <div class="item" data-slide-number="2">
+                                        <img src="img/15.jpg"  width="100%"></div>
+
+                                    <div class="item" data-slide-number="3">
+                                        <img src="img/17.jpg"  width="100%"></div>
+                                        <div class="item" data-slide-number="6">
+                                        <img src="img/18.jpg"  width="100%"></div>
+
+                                    <div class="item" data-slide-number="4">
+                                        <img src="img/19.jpg"  width="100%"></div>
+
+                                  
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/Slider-->
+        </div>
+
+    </div>
+</div>
+
+                    <div> 
+                        <span><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>Like</span>
+                        <span><span class="glyphicon glyphicon-comment" aria-hidden="true"></span>Comment</span>
+                        <span><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>Share</span>
+                    </div>
+                 
+                </div>           
+                <div class="panel-footer">
+                    <input style="width: 100%;margin-top: 15px;" placeholder="Write a comment...">
+                </div>
+            </div>
+
+
+     </div>
+</div>        
+          
+    
+         
+                
+       <div class="hidden-xs hidden-sm col-md-3" >
+            <div id="sidebar">
+            <!-- created a section for showing birthdays!! -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="glyphicon glyphicon-calendar"></span><b> Upcoming Birthdays</b></h3>
+                </div>
+                <div class="panel-body">
+                    <b>Today <br> 24 June</b> <span class="section"> <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="img/1.png" alt="..." height="32" width="32">
+                    </a>
+                    </div>
+                    <div class="media-body">
+                     
+                     <span><a href="#"><b>Keshav </b></a></span> 
+                     <div> 
+                        <small><span>Wish you a very Happy Birthday !!</span></small> 
+                     </div></div></span>
+
+                   <span class="section"> <div class="media-left">
+                    
+                    </div>
+                    
+                   
+                 <div class="panel-footer">
+                    
+                </div>
+
+              
+                </div>           
+                
+            
+
+
+            <div >
+                
+    <!-- Tab panes --><div class="panel panel-default">
+                 <!-- created a news ticker for our website using tab components and added glyphicons-->
+                 <!-- each news has a heading and a relevant link to the article -->
+                <div class="tab-content">
+                    
+                    
+                </div></div>
+                </div>
+                 
+                 <!-- Made a component for suggested pages -->
+                 <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><span class="glyphicon glyphicon-file"></span><b> Suggestions </b><a href="#" class="pull-right" style="color: blue; font-size: 15px">See More</a></h3>
+                    </div>
+                    <div class="panel-body">
+                        <span class="section"> <div class="media">
+                            <a href="#">
+                            <img  src="https://i.pinimg.com/564x/f5/0e/a9/f50ea91a073d79e4bcb5374d25d1c5be.jpg" alt="..." class="img-responsive">
+                            </a>
+                            </div>
+                            <div class="media-body">
+                                <div><a href="#"><b>Happy Birthday</b></a></div>
+                                
+                                <div><button> <span class="glyphicon glyphicon-thumbs-up"></span>Like</button>
+                                </div>
+                            </div>
+                        </span>
+
+                        <span class="section"> <div class="media">
+                            <a href="#">
+                            <img  src="https://www.homemade-gifts-made-easy.com/image-files/xhappy-birthday-images-many-blessings-600x900.jpg.pagespeed.ic.9AZqua2ajY.jpg" alt="..." class="img-responsive">
+                            </a>
+                            </div>
+                            <div class="media-body">
+                                <div><a href="#"><b>Happy Birthday</b></a></div>
+                                
+                                <div><button> <span class="glyphicon glyphicon-thumbs-up"></span>Like</button>
+                                </div>
+                            </div>
+                        </span>
+                        <!-- <span class="section"> <div class="media">
+                            <a href="#">
+                            <img  src="https://pbs.twimg.com/profile_images/486142394190946307/HgUIVNqP.jpeg" alt="..." class="img-responsive">
+                            </a>
+                            </div>
+                            <div class="media-body">
+                                <div><a href="#"><b>QUOTES WORLD</b></a></div>
+                                <div style="color: grey;">Quotation's Page  80 likes</div>
+                                <div><a href="#"><b>Willaim </b></a>likes this</div> 
+                                <div><button> <span class="glyphicon glyphicon-thumbs-up"></span>Like Page</button>
+                                </div>
+                            </div>
+                        </span> -->
+                    </div>
+                 <div class="panel-footer">
+                    
+                </div>
+
+                </div>           
+                
+        </div> 
+
+    </div>
+
+
+<div></div></div>
+<!-- Added a footer to the website -->
+      
+</div> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script >  jQuery(document).ready(function($) {
+ 
+        $('#myCarousel').carousel({
+                interval: 3000
+        });
+ 
+   
+});</script>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body> 
